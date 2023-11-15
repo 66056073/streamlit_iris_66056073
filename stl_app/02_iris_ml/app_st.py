@@ -49,13 +49,13 @@ else:
 
 with st.form('user_inputs'):
     sepal_length = st.number_input(
-        'Sepal Length (cm)', min_value=0, value=8)
+        'Sepal Length (cm)', min_value=0.0, value=8.0, step=0.1, format='%.1f')
     sepal_width = st.number_input(
-        'Sepal Width (cm)', min_value=0, value=5)
+        'Sepal Width (cm)', min_value=0.0, value=5.0, step=0.1, format='%.1f')
     petal_length = st.number_input(
-        'Petal Length (cm)', min_value=0, value=7)
+        'Petal Length (cm)', min_value=0.0, value=7.0, step=0.1, format='%.1f')
     petal_width = st.number_input(
-        'Petal Width (cm)', min_value=0, value=3)
+        'Petal Width (cm)', min_value=0.0, value=3.0, step=0.1, format='%.1f')
     st.form_submit_button()
 
 new_prediction = rfc.predict([[sepal_length, sepal_width, petal_length, petal_width]])
