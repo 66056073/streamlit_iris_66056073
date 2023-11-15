@@ -29,3 +29,12 @@ rf_pickle.close()
 output_pickle = open('output_iris.pickle', 'wb')
 pickle.dump(uniques, output_pickle)
 output_pickle.close()
+
+fig, ax = plt.subplots()
+
+ax = sns.barplot(x=rfc.feature_importances_, y=features.columns)
+plt.title('Which features are the most important for species prediction?')
+plt.xlabel('Importance')
+plt.ylabel('Feature')
+plt.tight_layout()
+fig.savefig('feature_importance.png')
