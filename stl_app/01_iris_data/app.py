@@ -13,3 +13,5 @@ choices = ['sepal.length',
 
 selected_x_var = st.selectbox('Select parameter for X axis', choices)
 selected_y_var = st.selectbox('Select parameter for Y axis', choices)
+
+iris_file = st.file_uploader('Select Iris file csv and upload', type=['csv'])
