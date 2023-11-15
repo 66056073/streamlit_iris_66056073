@@ -21,3 +21,21 @@ if iris_file is not None:
 else:
     st.stop()
 
+st.subheader('Simple Data')
+st.write(iris_df)
+
+st.subheader('Scatter Plot')
+sns.set_style('darkgrid')
+markers = {"Setosa": "v", "Versicolor": "s", "Virginica": "o"}
+
+fig, ax = plt.subplots()
+ax = sns.scatterplot(data=iris_df,
+                     x=selected_x_var, y=selected_y_var,
+                     hue='variety', markers=markers, style='variety')
+plt.xlabel(selected_x_var)
+plt.ylabel(selected_y_var)
+plt.title('Iris Species Data')
+st.pyplot(fig)
+
+
+
