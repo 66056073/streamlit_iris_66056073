@@ -46,3 +46,18 @@ else:
     st.write('We trained a Random Forest model on these data,'
              ' it has a score of {}! Use the '
              'inputs below to try out the model.'.format(score))
+
+with st.form('user_inputs'):
+    sepal_length = st.number_input(
+        'Sepal Length (cm)', min_value=0, value=8)
+    sepal_width = st.number_input(
+        'Sepal Width (cm)', min_value=0, value=5)
+    petal_length = st.number_input(
+        'Petal Length (cm)', min_value=0, value=7)
+    petal_width = st.number_input(
+        'Petal Width (cm)', min_value=0, value=3)
+    st.form_submit_button()
+
+new_prediction = rfc.predict([[sepal_length, sepal_width, petal_length, petal_width]])
+prediction_species = unique_iris_mapping[new_prediction][0]
+st.write('We predict your iris is of the {} species'.format(prediction_species))
