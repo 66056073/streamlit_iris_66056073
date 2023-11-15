@@ -19,3 +19,5 @@ x_train, x_test, y_train, y_test = train_test_split(
     features, output, test_size=0.8)
 rfc = RandomForestClassifier(random_state=15)
 rfc.fit(x_train, y_train)
+y_pred = rfc.predict(x_test)
+score = accuracy_score(y_pred, y_test)
