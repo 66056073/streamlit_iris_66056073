@@ -10,4 +10,4 @@ import pickle
 
 iris_df = pd.read_csv('iris.csv')
 iris_df.dropna(inplace=True)
-
+output = iris_df['variety']
