@@ -10,3 +10,6 @@ choices = ['sepal.length',
            'sepal.width',
            'petal.length',
            'petal.width']
+
+selected_x_var = st.selectbox('Select parameter for X axis', choices)
+selected_y_var = st.selectbox('Select parameter for Y axis', choices)
