@@ -11,3 +11,6 @@ st.title('Iris Classifier')
 st.write('This app uses 4 inputs to predict the species of iris using'
          'a model built on the Iris dataset. Use the form below'
          ' to get started!')
+
+iris_file = st.file_uploader('Upload your own iris dataset')
+
