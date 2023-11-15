@@ -8,4 +8,5 @@ from sklearn.model_selection import train_test_split
 import pickle
 
 
-st.
+iris_df = pd.read_csv('iris.csv')
+
