@@ -4,6 +4,7 @@
 Assignment: Iris Dataset
 
 1. 01_iris_data : https://irisspecies.streamlit.app
+2. 02_iris_ml : app_ml.py
 
 ---
 ## **Note**:  
