@@ -14,3 +14,6 @@ output = iris_df['variety']
 features = iris_df['sepal.length', 'sepal.width', 'petal.length', 'petal.width']
 features = pd.get_dummies(features)
 output, uniques = pd.factorize(output)
+
+x_train, x_test, y_train, y_test = train_test_split(
+    features, output, test_size=0.8)
