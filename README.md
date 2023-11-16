@@ -1,4 +1,4 @@
-# streamlit_iris_66056073
+# วรัญชัย ไชยปัญญา 66056073
 
 
 Assignment: Iris Dataset
@@ -13,7 +13,3 @@ Assignment: Iris Dataset
 1. Python 3.11  
 2. หากไม่สามารถรันบน streamlit ได้กรุณากด F5 เพื่อ refresh อีกครั้ง
 3. irisclass.streamlit.app ต้อง upload file csv ก่อน error ถึงจะหายไป
-
----
-
-### วรัญชัย ไชยปัญญา 66056073
